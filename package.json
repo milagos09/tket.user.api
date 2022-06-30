@@ -1,8 +1,27 @@
 {
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "mongoose": "^6.4.1"
-  }
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "mongoose": "^6.4.1"
+    },
+    "name": "mongodb-api",
+    "version": "1.0.0",
+    "description": "api for users and tickets using mongodb atlass",
+    "main": "app.js",
+    "devDependencies": {},
+    "scripts": {
+        "start": "nodemon app",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/milagos09/tket.user.api.git"
+    },
+    "author": "tket",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/milagos09/tket.user.api/issues"
+    },
+    "homepage": "https://github.com/milagos09/tket.user.api#readme"
 }
