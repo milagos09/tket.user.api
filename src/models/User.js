@@ -6,6 +6,7 @@ const userSchema = new mongoose.Schema({
     email: {
         type: String,
         required: [true, "Email is required"],
+        immutable: true,
     },
     password: {
         type: String,
@@ -16,8 +17,9 @@ const userSchema = new mongoose.Schema({
     isAdmin: {
         type: Boolean,
         default: false,
+        immutable: true,
     },
-    dateRegistered: { type: Date, default: new Date() },
+    dateRegistered: { type: Date, default: new Date(), immutable: true },
 });
 
 module.exports = mongoose.model("User", userSchema);
